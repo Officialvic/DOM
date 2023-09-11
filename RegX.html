@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <script>
+        let email = prompt('Enter your Email')
+        let pattern = /(\w+)@(\w+)\.com/g;
+        let matches = email.match(pattern)
+        
+        // Check for Email Inputa@
+        if(email == matches) {
+            alert(email.replace(pattern, "****@$2.com"))
+        } else {
+            alert("Enter a valid email")
+        }
+    </script>
+</body>
+</html>

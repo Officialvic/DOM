@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+:root {
+    --primary-color: #6F367E;
+    --primaryblur-color: #883c9b;
+}
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.container {
+    padding: 2.5rem 3.4rem;
+}
+.row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+}
+.btn {
+    background-color: var(--primary-color);
+    padding: .8rem .9rem;
+    border: none;
+    border-radius: 6px;
+}
+.btn:hover {
+    background-color: var(--primaryblur-color);
+}
+.btn-text {
+    color: #fff;
+}
+a, li {
+    list-style: none ;
+    text-decoration: none;
+    color: var(--primary-color);
+    font-size: 0.9rem;
+}
+l-heading {
+    color: var(--primary-color);
+}
+.active {
+    border-bottom: 2px solid var(--primary-color);
+    padding: 0.9rem;
+}
+
+#projects  {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    background-color: aliceblue;
+}
+.project {
+    min-width: 200px;
+    background-color: aquamarine;
+    padding: 10px;
+    margin: 10px;
+}
+
+img {
+    max-width: 200px;
+    max-height: 200px;
+}
+
+#controls {
+    background-color: #6F367E;
+    margin-bottom: 30px;
+    display: flex;
+}
+
+#newProjects {
+    margin: 50px auto;
+}
